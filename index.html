@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<!--This is a simple calculator for temperature, weight and distance-->
 <html lang="en">
   <head>
       <title>Document</title>
       <link rel="stylesheet" href="style.css">
+      <script src="./script.js"></script>
   </head>
   <body>
       <section id="home">
@@ -32,11 +34,11 @@
                 <legend>Temperature</legend>
                 <label for="Temperature">Celsius</label> <br/>
 
-                <input type="number" id="c"> <br/>
+                <input type="number" id="celcius"> <br/>
 
-                <button id="temperature"> Convert </button> <br/>
+                <button id="temperature" onclick="return temperature()"> Convert </button> <br/>
 
-                <input type="number" id="f"> <br/>
+                <input type="number" id="fahrenheit"> <br/>
 
                  <label for="Temperature">Fahrenheit</label>
               </fieldset>
@@ -59,12 +61,11 @@
                 <legend>Weight</legend>
                 <label for="Weight">KG</label> <br/>
 
-                <input type="number"> <br/>
+                <input type="number" id="kilograms"> <br/>
 
-                <button id="weight"> Convert </button>  <br/>
+                <button id="weight" onclick="return weight()"> Convert </button>  <br/>
 
- 
-                <input type="number">  <br/>
+                <input type="number" id="pounds">  <br/>
 
                 <label for="Weight">Pounds</label>    
               </fieldset>
@@ -86,11 +87,11 @@
                 <legend>Distance</legend>
                   <label for="Distance">KM</label> <br/>
 
-                <input type="number">  <br/>
+                  <input type="number" id="kilometers">  <br/>
 
-                  <button id="distance"> Convert </button> <br/>
+                  <button id="distance" onclick="return distance()"> Convert </button> <br/>
 
-                  <input type="number">  <br/>
+                  <input type="number" id="miles">  <br/>
 
                 <label for="Distance">Miles</label>
               </fieldset>
